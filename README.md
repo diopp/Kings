@@ -11,10 +11,7 @@ A simple app that replicate Kings (drinking game)
 
 ## Screenshots
 
-
-![screenshot 1](images/Capt3.png)
 ![screenshot 2](images/Capt1.png)
-![screenshot 2](images/Capt2.png)
 
 ## Getting Started 
 
