@@ -22,6 +22,7 @@ function getData() {
             console.log(data, 'cards');
 const $img = `<img src="${data.cards[0].image}" alt="Cards" width="auto" height="auto"></img>`
  $cards.append($img)
+ response()
  output()          
         }, (error) => {
             console.log (error);
@@ -31,7 +32,7 @@ const $img = `<img src="${data.cards[0].image}" alt="Cards" width="auto" height=
 
 
     function output() {
-        console.log(cardInfo)
+      
        if(cardInfo === 'ACE'){
            $('h2').text('Everyone starts drinking their beverage at the same time as the person to their left. No player can stop drinking until the player before them stops.')
        }
@@ -44,7 +45,7 @@ const $img = `<img src="${data.cards[0].image}" alt="Cards" width="auto" height=
     }  
 
     if(cardInfo === 'JACK'){
-        $('h2').text('When you place your thumb on the end of the table, however discretely, all other players must place their thumbs there as well. The last person to place their thumb on the table has to drink. You have the power to do this at any point until the next Jack is drawn.')
+        $('h2').text('Each player puts up 3 fingers, then starting with the person who drew the card, each player says "never have I ever «something»". If you have done it, you put a finger down, until someone loses')
     }  
 
     if(cardInfo === '10'){
@@ -78,3 +79,52 @@ const $img = `<img src="${data.cards[0].image}" alt="Cards" width="auto" height=
 
     
     }
+
+    function response() {
+      
+        if(cardInfo === 'ACE'){
+            $('h1').text('🍺Waterfall🍺')
+        }
+        if(cardInfo === 'KING'){
+         $('h1').text('📏Ruler📏')
+     }  
+ 
+     if(cardInfo === 'QUEEN'){
+         $('h1').text('❓Questions❓')
+     }  
+ 
+     if(cardInfo === 'JACK'){
+         $('h1').text('🖐Never have I ever 🖐')
+     }  
+ 
+     if(cardInfo === '10'){
+         $('h1').text(' 📜Categories 📜')
+     } 
+     
+     if(cardInfo === '9'){
+         $('h1').text('🎵Rhyme🎵')
+     }  
+     if(cardInfo === '8'){
+         $('h1').text('🧑‍🤝‍🧑Mate🧑‍🤝‍🧑')
+     }  
+     if(cardInfo === '7'){
+         $('h1').text('👆Heaven👆')
+     }  
+     if(cardInfo === '6'){
+         $('h1').text('🙅‍♀️Chicks🙅‍♀️')
+     }  
+     if(cardInfo === '5'){
+         $('h1').text('🙅‍♂️Guys🙅‍♂️')
+     }  
+     if(cardInfo === '4'){
+         $('h1').text('🟫Floor🟫')
+     }  
+     if(cardInfo === '3'){
+         $('h1').text('🤟Me🤟')
+     }  
+     if(cardInfo === '2'){
+         $('h1').text('👆You👆')
+     }  
+ 
+     
+     }
