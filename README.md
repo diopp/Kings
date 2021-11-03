@@ -1,4 +1,4 @@
-# Food search
+# Kings
 
 A simple app that replicate Kings (drinking game)
 
