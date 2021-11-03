@@ -15,7 +15,7 @@ A simple app that replicate Kings (drinking game)
 
 ## Getting Started 
 
-[Click here](#) to see the site live
+[Click here](https://diopp.github.io/Kings/) to see the site live
 
 ## Future Enhancements
 Allow the users to add their names
